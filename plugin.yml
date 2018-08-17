@@ -1,5 +1,5 @@
 ﻿name: ZS-StaffMenu
-api: [3.0.0-ALPHA12, 3.0.0-ALPHA12-ALPHA4, 3.0.0-ALPHA12-ALPHA5, 3.0.0-ALPHA12-ALPHA12] 
+api: [4.0.0] 
 version: "1.0.0-Beta"
 main: NewZerosm\StaffMenu
 author: MineDefenser
