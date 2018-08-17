@@ -284,14 +284,14 @@ class StaffUICommand extends ZerosmCommand{
 			$form->setTitle("§l§7<< §bStaff Menu §7>>");
 			$form->setContent("차단 메뉴에 오신것을 환영합니다! 관리자님!");
 			$form->addButton("§l§9<< §c메인으로 돌아가기 §9>>\n§r§fAssistiveTouch 메인화면으로 이동합니다.", 0);
-			$form->addButton("§l§8<< §aServer Message §8>>\n§r§f공지 보내기", 1, "https://i.imgur.com/duJaPH4.png");
-			$form->addButton("§l§8<< §aUser Date Info §8>>\n§r§f유저 정보 조회", 2, "https://i.imgur.com/duJaPH4.png");
-			$form->addButton("§l§8<< §aUser Inventory Clear §8>>\n§r§f인벤토리 초기화", 3, "https://i.imgur.com/duJaPH4.png");
-			$form->addButton("§l§8<< §aKick §8>>\n§r§f플레이어 킥", 4, "https://i.imgur.com/duJaPH4.png");
-			$form->addButton("§l§8<< §aName Ban §8>>\n§r§f닉네임 차단", 5, "https://i.imgur.com/duJaPH4.png");
-			$form->addButton("§l§8<< §aName UnBan §8>>\n§r§f닉네임 차단 해제", 6, "https://i.imgur.com/duJaPH4.png");
-			$form->addButton("§l§8<< §aIP Ban §8>>\n§r§f아이피 차단", 7, "https://i.imgur.com/duJaPH4.png");
-			$form->addButton("§l§8<< §aIP UnBan §8>>\n§r§f아이피 차단 해제", 8, "https://i.imgur.com/duJaPH4.png");
+			$form->addButton("§l§8<< §aServer Message §8>>\n§r§f공지 보내기", 1, "https://i.imgur.com/3llO5u6.png");
+			$form->addButton("§l§8<< §aUser Date Info §8>>\n§r§f유저 정보 조회", 2, "https://i.imgur.com/3llO5u6.png");
+			$form->addButton("§l§8<< §aUser Inventory Clear §8>>\n§r§f인벤토리 초기화", 3, "https://i.imgur.com/3llO5u6.png");
+			$form->addButton("§l§8<< §aKick §8>>\n§r§f플레이어 킥", 4, "https://i.imgur.com/3llO5u6.png");
+			$form->addButton("§l§8<< §aName Ban §8>>\n§r§f닉네임 차단", 5, "https://i.imgur.com/3llO5u6.png");
+			$form->addButton("§l§8<< §aName UnBan §8>>\n§r§f닉네임 차단 해제", 6, "https://i.imgur.com/3llO5u6.png");
+			$form->addButton("§l§8<< §aIP Ban §8>>\n§r§f아이피 차단", 7, "https://i.imgur.com/3llO5u6.png");
+			$form->addButton("§l§8<< §aIP UnBan §8>>\n§r§f아이피 차단 해제", 8, "https://i.imgur.com/3llO5u6.png");
 			$form->sendToPlayer($sender);
 			return true;
 			
