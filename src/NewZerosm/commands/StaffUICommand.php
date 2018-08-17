@@ -98,64 +98,7 @@ class StaffUICommand extends ZerosmCommand{
 					break;	
 					
 					case 3:
-						$api = $sender->getServer()->getPluginManager()->getPlugin("FormAPI");
-						if ($api === null || $api->isDisabled()) {
-						}
-						$form = $api->createCustomForm(function(Player $sender, array $data){
-							$result = $data[0];
-							
-							$name = $result;
-							
-							$player = $sender->getServer()->getPlayer($name);
-							
-							if($result != null){
-								
-								$api = $player->getServer()->getPluginManager()->getPlugin("FormAPI");
-								if($api === null || $api->isDisabled()){
-										
-								}
-								
-								$form = $api->createModalForm(function (Player $player, array $data){
-									$result = $data[0];
-										
-									if($result != null){
-										$sender->sendMessage("§7----------------");
-										$sender->sendMessage("§f<§e초기화§f> 플레이어 §e".$name."§f님의 인벤토리 초기화를 진행 했습니다.");
-										$sender->sendMessage("§7----------------");
-										
-										$player->getPlayer()->getInventory()->clearAll();
-										$player->getPlayer()->getArmorInventory()->clearAll();
-										return;
-										
-									}
-									
-									if($result == null){
-										$sender->sendMessage("§7----------------");
-										$sender->sendMessage("§f<§e초기화§f> 플레이어 §e".$name."§f님의 인벤토리 초기화 작업을 취소합니다.");
-										$sender->sendMessage("§7----------------");
-										return;
-									}
-									
-								});
-								$form->setTitle("§l§4<< §c인벤토리 초기화 경고 §4>>");
-								$form->setContent("§r§e".$name."§f님의 인벤토리를 초기화 합니다.\n§f동의 하시면 밑에 확인을 눌러주세요!");
-								$form->setButton1("§l§7<< §a인벤토리 초기화 진행 §7>>");
-								$form->setButton2("§l§7<< §c취소 §7>>");
-								
-								$form->sendToPlayer($sender->getPlayer());
-								return true;
-							}
-					
-							if($result == null){
-								$sender->addTitle("§l§c✖", "§7닉네임을 입력하지 않았습니다!");
-								return true;
-							}
-						});
-						
-						$form->setTitle("§l§8<< §fUser Inventory Clear §8>>");
-						$form->addInput("닉네임 입력란", "인벤토리를 초기화할 유저의 닉네임을 적어주세요!");
-						$form->addLabel("주의하세요! 인벤토리를 초기화 하시면 더이상 복구 할수 없습니다.");
-						$form->sendToPlayer($sender);
+						$sender->sendMessage("§c아직 준비중인 기능입니다. 빠른 시일내로 준비하겠습니다.");
 					break;
 					
 					case 4:
