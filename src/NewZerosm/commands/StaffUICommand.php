@@ -117,7 +117,7 @@ class StaffUICommand extends ZerosmCommand{
 								$sender->sendMessage("§f<§e차단§f> 사유: §e".$reason."");
 								$sender->sendMessage("§7----------------");
 								
-								$player->kick("§eZEROSM Network§f 서버에서 Kick 처리 되었습니다.\n§f사유: §e".$reason."\n§f몇초뒤에 서버에 재접속 해보세요!", false);
+								$player->kick("서버에서 Kick 처리 되었습니다.\n§f사유: §e".$reason."\n§f몇초뒤에 서버에 재접속 해보세요!", false);
 								return true;
 							}
 					
