@@ -11,7 +11,7 @@ use pocketmine\command\CommandExecutor;
 use pocketmine\command\ConsoleCommandSender;
 use pocketmine\event\player\PlayerInteractEvent;
 
-class Staff extends PluginBase{
+class StaffMenu extends PluginBase{
 	private static $instance = null;
 
 	public static function getInstance(){
