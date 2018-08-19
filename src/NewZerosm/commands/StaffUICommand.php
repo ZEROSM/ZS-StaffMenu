@@ -1,6 +1,6 @@
 <?php
 
-namespace NewZerosm\commands\Staff;
+namespace NewZerosm\commands;
 
 use pocketmine\Player;
 use pocketmine\Server;
@@ -13,14 +13,14 @@ use pocketmine\item\Item;
 use pocketmine\network\mcpe\protocol\types\CommandEnum;
 use pocketmine\network\mcpe\protocol\types\CommandParameter;
 
-use NewZerosm\Plugin1;
+use NewZerosm\StaffMenu;
 use NewZerosm\ZerosmCommand;
 
 use onebone\economyapi\EconomyAPI;
 
 class StaffUICommand extends ZerosmCommand{
 	
-	public function __construct(Plugin1 $owner){
+	public function __construct(StaffMenu $owner){
 		parent::__construct(
 			"관리자메뉴", 
 			"§c스탭 명령어", 
