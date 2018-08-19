@@ -57,8 +57,7 @@ class StaffUICommand extends ZerosmCommand{
 					break;
 					
 					case 1:
-						$command = "공지";
-						$sender->getServer()->getCommandMap()->dispatch($sender, $command);
+						$sender->sendMessage("§c아직 준비중인 기능입니다. 빠른 시일내로 준비하겠습니다.");
 					break;
 					
 					case 2:
@@ -80,8 +79,6 @@ class StaffUICommand extends ZerosmCommand{
 								$sender->sendMessage("§f<§e조회§f> IP 정보: §e".$ip);
 								$sender->sendMessage("§f<§e조회§f> UUID 정보: §e".$player->getPlayer()->getUniqueId());
 								$sender->sendMessage("§f<§e조회§f> Xuid 정보: §e".$xuid);
-								$sender->sendMessage("§f<§e조회§f> 디바이스 모델 정보: §e".$player->getPlayer()->getDeviceModel());
-								$sender->sendMessage("§f<§e조회§f> 디바이스 OS 정보: §e".$player->getPlayer()->getDeviceOS());
 								$sender->sendMessage("§7----------------");
 								return true;
 							}
