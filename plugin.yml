@@ -1,6 +1,6 @@
 ﻿name: ZS-StaffMenu
 api: [4.0.0] 
-version: "1.0.2-Beta"
+version: "1.0.3-Beta"
 main: NewZerosm\StaffMenu
 author: MineDefenser
 website: http://zerosm.kro.kr
